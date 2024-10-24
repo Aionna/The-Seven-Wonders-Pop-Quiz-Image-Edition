@@ -1,7 +1,7 @@
 const quizData = [
     {
         question: "Why did the AI give Ioanna a third hand for chomping down the ramen?",
-        image: "images/japan (3).jpg",
+        image: "japan (3).jpg",
         options: ["It was 'create one , get one hand for free' day !", "A finger here, a hand there, two hands mashed together... That's what AIs do.", "Have you seen her use chopsticks? Enough said!", "In order to strike that cute pose ,she needed a helping hand!"],
         correct: "Have you seen her use chopsticks? Enough said!",
         explanation: "Even three are not enough!",
