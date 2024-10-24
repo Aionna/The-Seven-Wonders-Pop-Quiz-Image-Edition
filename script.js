@@ -2,31 +2,99 @@ const quizData = [
     {
         question: "Why did the AI give Ioanna a third hand for chomping down the ramen?",
         image: "japan (3).jpg",
-        options: ["It was 'create one , get one hand for free' day !", "A finger here, a hand there, two hands mashed together... That's what AIs do.", "Have you seen her use chopsticks? Enough said!", "In order to strike that cute pose ,she needed a helping hand!"],
+        options: [
+            "It was 'create one, get one hand for free' day!",
+            "A finger here, a hand there, two hands mashed together... That's what AIs do.",
+            "Have you seen her use chopsticks? Enough said!",
+            "In order to strike that cute pose, she needed a helping hand!"
+        ],
         correct: "Have you seen her use chopsticks? Enough said!",
         explanation: "Even three are not enough!",
     },
     {
-        question: "Ioanna is a famous onna-musha, and like all legendary figures, her image tends to get a bit... exaggerated. Take this one for example! How so?",
-        image: "images/japan (5).jpg",
-        options: ["Those extra fingers really help her juggle swords like a pro!", "Her hair: long, dark, and miraculously immune to frizz!", "Her big fluffy...pillows!", "All of the above!"],
+        question: "Ioanna is a famous onna-musha, and like all legendary figures, her image tends to get a bit... exaggerated. Take this one, for example! How so?",
+        image: "japan (5).jpg",
+        options: [
+            "Those extra fingers really help her juggle swords like a pro!",
+            "Her hair: long, dark, and miraculously immune to frizz!",
+            "Her big fluffy... pillows!",
+            "All of the above!"
+        ],
         correct: "All of the above!",
-        explanation: "She fights enemies with a normal set of fingers, frizzy hair and... small cushions which make it even more impressive!",
+        explanation: "She fights enemies with a normal set of fingers, frizzy hair, and... small cushions, which makes it even more impressive!",
     },
     {
         question: "What's depicted in the picture?",
-        image: "images/japan (10).jpg",
-        options: ["Are you blind?A fine japanese knife perfect for cutting you waygu steak!", "Suns & moons and various other stars. I can't see anything else, can you?", "A katana.The Green-eyed Samurai's katana!", " A tanto! (The tricky answer)"],
-        correct: "A katana.The Green-eyed Samurai's katana!",
-        explanation: "Amaterasu knows how to spot a true warrior's heart! Her gift? A katana and a tanto!The katana just took the spotlight!",
+        image: "japan (10).jpg",
+        options: [
+            "Are you blind? A fine Japanese knife perfect for cutting your way through wagyu steak!",
+            "Suns & moons and various other stars. I can't see anything else, can you?",
+            "A katana. The Green-eyed Samurai's katana!",
+            "A tanto! (The tricky answer)"
+        ],
+        correct: "A katana. The Green-eyed Samurai's katana!",
+        explanation: "Amaterasu knows how to spot a true warrior's heart! Her gift? A katana and a tanto! The katana just took the spotlight!",
     },
     {
         question: "Why is our beloved Green-Eyed Samurai crying?",
-        image: "images/japan (14).jpg",
-        options: ["His favorite ramen place was all out of ramen!", "Someone kidnapped the small Tanuki! OMFG!", "These are tears of joy because his favorite ramen shop was open and was stocked in ramen!", " His all out of hair shaping cream!"],
+        image: "japan (14).jpg",
+        options: [
+            "His favorite ramen place was all out of ramen!",
+            "Someone kidnapped the small Tanuki! OMFG!",
+            "These are tears of joy because his favorite ramen shop was open and stocked with ramen!",
+            "He's all out of hair styling cream!"
+        ],
         correct: "Someone kidnapped the small Tanuki! OMFG!",
-        explanation: "Though running out of hair formation cream would be the worst , in this case he shed a tear when the small Tanuki was abducted! Or maybe it was a tear because he had to go fetch her or just plain sweat that got into his eyes...",
+        explanation: "Though running out of hair styling cream would be the worst, in this case he shed a tear when the small Tanuki was abducted! Or maybe it was a tear because he had to go fetch her, or something got into his eye...",
     },
+    {
+        question: "What is the Green-Eyed Samurai carrying on his back?",
+        image: "japan (1).jpg",
+        options: [
+            "Ratatouille! It advises how to make the focaccia!",
+            "The motherflippin' Tanuki!",
+            "Lure to toss to his enemies...",
+            "His furry scabbard! Kawaii!"
+        ],
+        correct: "The motherflippin' Tanuki!",
+        explanation: "Your forest-friendly shapeshifter with a voracious appetite from Japanese folklore... meh, you get it!",
+    },
+    {
+        question: "Why is the glasses-wearing onna-musha crying?",
+        image: "jp (12).jpg",
+        options: [
+            "She was bested by the humongous onigiri! She can't eat it all!",
+            "A round around nature brings out her allergies! Achou!",
+            "Her armor got a stain, and now it needs dry-cleaning!",
+            "She became a mush when the Green-Eyed Samurai helped her become an onna-musha!"
+        ],
+        correct: "She became a mush when the Green-Eyed Samurai helped her become an onna-musha!",
+        explanation: "Rumors have it that it still gets her every time...",
+    },
+    {
+        question: "What did Cédric throw into the night sky to get Laelaps to descend?",
+        image: "jp (11).jpg",
+        options: [
+            "Are you Sirius? Of course, it was a baguette! 🥖",
+            "Treats for furry and sloppy good boys who like a good chase!",
+            "A flea collar. 'That thing ain't getting next to me without it!'",
+            "Zeus' mini-bolt ⚡!"
+        ],
+        correct: "Zeus' mini-bolt ⚡!",
+        explanation: "Apollo's gift: Zeus' baby bolt 👶⚡. Only a chosen one could wield that power!",
+    },
+    {
+        question: "Why did Ioanna get with her clothes in the sauna?",
+        image: "jp (2).jpg",
+        options: [
+            "Duh! They don't call her 'dufus' for nothing!",
+            "What better way to wash both your body and your clothes?",
+            "The water wasn't warm enough.",
+            "She knew she was going to get abducted!"
+        ],
+        correct: "She knew she was going to get abducted!",
+        explanation: "She has the gift of foresight and of modesty—not!"
+    }
     
 ];
 
@@ -102,7 +170,7 @@ function selectAnswer(selectedOption) {
             score++;
             explanationElement.textContent = `Correct! ${currentQuestion.explanation}`;
         } else {
-            explanationElement.textContent = `Incorrect. The correct answer is ${currentQuestion.correct}. ${currentQuestion.explanation}`;
+            explanationElement.textContent = `Incorrect. The correct answer is: ${currentQuestion.correct}. ${currentQuestion.explanation}`;
         }
         explanationElement.classList.remove('loading');
 
@@ -157,10 +225,6 @@ function restartQuiz() {
     startButton.style.display = 'block';
 }
 
-startButton.addEventListener('click', startQuiz);
-nextButton.addEventListener('click', showNextQuestion);
-restartButton.addEventListener('click', restartQuiz);
-
 // Initialize the quiz
 function initQuiz() {
     startScreen.style.display = 'block';
@@ -170,49 +234,51 @@ function initQuiz() {
     startButton.style.display = 'block';
 }
 
-// Call initQuiz when the page loads
-window.addEventListener('load', initQuiz);
+document.addEventListener('DOMContentLoaded', () => {
+    startButton.addEventListener('click', startQuiz);
+    nextButton.addEventListener('click', showNextQuestion);
+    restartButton.addEventListener('click', restartQuiz);
+    initQuiz();
+});
 
-const maxSakura = 4;
-let activeSakura = 0;
+// Croissant animation logic
+const maxCroissant = 4;
+let activeCroissant = 0;
 
-// Sakura animation logic
-function createSakura() {
-    if (activeSakura >= maxSakura) return;
+function createCroissant() {
+    if (activeCroissant >= maxCroissant) return;
 
-    const sakuraContainer = document.getElementById('sakura-container');
-    const sakura = document.createElement('span');
-    sakura.classList.add('sakura');
-    sakura.textContent = '🌸';
+    activeCroissant++;
+    const croissantContainer = document.getElementById('croissant-container');
+    const croissant = document.createElement('span');
+    croissant.classList.add('croissant');
+    croissant.textContent = '🥐';
 
-    sakura.style.left = `${Math.random() * 100}vw`;
+    croissant.style.left = `${Math.random() * 100}vw`;
     const duration = Math.random() * 10 + 15; // 15 to 25 seconds
-    sakura.style.animationDuration = `${duration}s`;
+    croissant.style.animationDuration = `${duration}s`;
     
-    sakuraContainer.appendChild(sakura);
+    croissantContainer.appendChild(croissant);
 
-    sakura.addEventListener('animationiteration', () => {
-        sakura.remove();
-        createSakura();
+    croissant.addEventListener('animationend', () => {
+        croissant.remove();
+        activeCroissant--;
+        createCroissant();
     });
 }
 
-for (let i = 0; i < maxSakura; i++) {
-    createSakura();
-}
-
-setInterval(() => {
-    while (activeSakura < maxSakura) {
-        createCroissant();
-    }
-}, 1000);
-
-document.addEventListener('DOMContentLoaded', function() {
+// Start croissant animation when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
     const loveLink = document.getElementById('love-link');
-    const protonDriveLink = 'https://drive.proton.me/urls/DNFQ1CGQY4#otyr4Cf4LZzX'; // Replace with your actual Proton Drive link
+    const protonDriveLink = 'https://drive.proton.me/urls/DNFQ1CGQY4#otyr4Cf4LZzX';
 
     loveLink.addEventListener('click', function(e) {
         e.preventDefault();
         window.open(protonDriveLink, '_blank');
     });
+
+    // Initialize croissants
+    for (let i = 0; i < maxCroissant; i++) {
+        createCroissant();
+    }
 });

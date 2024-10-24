@@ -250,8 +250,8 @@ body {
     background-color: rgba(40, 44, 52, 0.8);
 }
 
-/* Sakura animation */
-#sakura-container {
+/* Croissant animation */
+#croissant-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -262,7 +262,7 @@ body {
     z-index: 0;
 }
 
-.sakura {
+.croissant {
     position: absolute;
     top: -50px;
     font-size: 30px;
