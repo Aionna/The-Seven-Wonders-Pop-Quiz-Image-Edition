@@ -1,0 +1,64 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main camera body -->
+  <rect x="10" y="30" width="80" height="50" rx="8" fill="#9f7905">
+    <!-- Subtle pulse for whole camera -->
+    <animate attributeName="fill"
+             values="#9f7905;#b28a0b;#9f7905"
+             dur="2s"
+             repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Lens with stronger animation -->
+  <circle cx="50" cy="55" r="20" fill="#b28a0b">
+    <animate attributeName="r"
+             values="20;23;20"
+             dur="1.5s"
+             repeatCount="indefinite"/>
+  </circle>
+  <circle cx="50" cy="55" r="15" fill="#282c34"/>
+  <circle cx="50" cy="55" r="10" fill="#9f7905">
+    <!-- Inner lens rotation -->
+    <animateTransform attributeName="transform"
+                      type="rotate"
+                      from="0 50 55"
+                      to="360 50 55"
+                      dur="4s"
+                      repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Flash with blink effect -->
+  <rect x="30" y="20" width="40" height="10" rx="4" fill="#9f7905">
+    <animate attributeName="fill"
+             values="#9f7905;#ffffff;#9f7905"
+             dur="3s"
+             repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Power light with stronger pulse -->
+  <circle cx="75" cy="40" r="3" fill="#ffffff">
+    <animate attributeName="opacity"
+             values="1;0;1"
+             dur="1s"
+             repeatCount="indefinite"/>
+    <animate attributeName="r"
+             values="3;4;3"
+             dur="1s"
+             repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Enhanced glow effect -->
+  <rect x="8" y="28" width="84" height="54" rx="10" 
+        fill="none" 
+        stroke="#b28a0b" 
+        stroke-width="2"
+        opacity="0.3">
+    <animate attributeName="opacity"
+             values="0.3;0.8;0.3"
+             dur="2s"
+             repeatCount="indefinite"/>
+    <animate attributeName="stroke-width"
+             values="2;3;2"
+             dur="2s"
+             repeatCount="indefinite"/>
+  </rect>
+</svg>

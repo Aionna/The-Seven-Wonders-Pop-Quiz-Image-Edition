@@ -201,13 +201,13 @@ function showNextQuestion() {
 function showResult() {
     let scoreDescription;
     if (score <= 1) {
-        scoreDescription = "Oh mon dieu! 😱 You might want to brush up on your Seven Wonders knowledge!";
+        scoreDescription = "Ara ara! 😱";
     } else if (score <= 2) {
-        scoreDescription = "Eh ben, this isn't shabby at all! 😎 You're on your way to becoming a Seven Wonders expert!";
+        scoreDescription = "Ii kanji, grasshopper! 🦗";
     } else if (score === 3) {
-        scoreDescription = "Très bien! You're almost a Seven Wonders connoisseur! 🏆";
+        scoreDescription = "Sugoi! Just one point to be even more sugoi, you are touching legendary levels! 🏆";
     } else {
-        scoreDescription = "Oh là là! You're a true Seven Wonders connoisseur! 🏆 Magnifique!";
+        scoreDescription = "Yatta! You're a true Seven Wonders samurai! A legend! 🥇";
     }
 
     resultElement.innerHTML = `You scored ${score} out of ${randomizedQuestions.length}.<br><br>${scoreDescription}`;
@@ -270,7 +270,7 @@ function createCroissant() {
 // Start croissant animation when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     const loveLink = document.getElementById('love-link');
-    const protonDriveLink = 'https://drive.proton.me/urls/DNFQ1CGQY4#otyr4Cf4LZzX';
+    const protonDriveLink = 'https://drive.proton.me/urls/80XR6N2K8R#T597MNAv9Apw';
 
     loveLink.addEventListener('click', function(e) {
         e.preventDefault();
