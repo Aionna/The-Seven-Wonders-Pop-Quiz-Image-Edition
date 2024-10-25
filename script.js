@@ -27,7 +27,7 @@ const quizData = [
         question: "What's depicted in the picture?",
         image: "japan (10).jpg",
         options: [
-            "Are you blind? A fine Japanese knife perfect for cutting your way through wagyu steak!",
+            "Are you blind? This is a fine Japanese knife,perfect for slicing through a wagyu steak!",
             "Suns & moons and various other stars. I can't see anything else, can you?",
             "A katana. The Green-eyed Samurai's katana!",
             "A tanto! (The tricky answer)"
